@@ -2,9 +2,30 @@ name: 'Run playbook on Ansible Tower'
 description: 'Github action that allows you to run a playbook on ansible tower'
 author: 'Victor Ortegon'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  ansible-user:             
+    description: 'Ansible Tower User'
+    required: true
+  ansible-pass:             
+    description: 'Ansible Tower Password'
+    required: true
+  azure-subscription:             
+    description: 'Azure suscription id'
+    required: true
+  azure-client-id:             
+    description: 'Azure client id'
+    required: true
+  azure-client-secret:             
+    description: 'Azure secret'
+    required: true
+  additional-vars:             
+    description: 'Extra vars required by the ansible playbook'
+    required: true
+  template-id:             
+    description: 'Template id on Ansible Tower'
+    required: true
+outputs:
+  RESOURCE_NAME:
+    description: 'Component resource name deployed on Azure'
 runs:
   using: 'node12'
   main: 'dist/main.js'
