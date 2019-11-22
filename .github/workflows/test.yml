@@ -1,4 +1,4 @@
-name: "Test typescript-action"
+name: "Test run-playbook-on-ansible-tower-action"
 on:
   pull_request:
   push:
@@ -17,4 +17,20 @@ jobs:
     - run: npm test
     - uses: ./
       with: 
-        milliseconds: 1000
+        ansible-user: ${{ secrets.ansibleUser }}
+        ansible-pass: ${{ secrets.ansiblePass }}
+        azure-subscription: ${{ secrets.azureSubscription }}
+        azure-client-id: ${{ secrets.azureClientId }}
+        azure-client-secret: ${{ secrets.azureClientSecret }}
+        template-id: '1254'
+        additional-vars: |
+          {
+              "var_environment": "Development",
+              "var_ctpService": "Co-Dev",
+              "var_owner": "martin.calderon@gds.ey.com",
+              "var_deploymentId": "TCDTCX",
+              "var_chargeCode": "32405098",
+              "var_location": "useast",
+              "var_productApp": "INT"
+          }
+
