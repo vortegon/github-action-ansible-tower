@@ -19,7 +19,8 @@
   "author": "Victor Ortegon",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0"
+    "@actions/core": "^1.0.0",
+    "request-promise": "^4.2.5"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
