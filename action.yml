@@ -1,0 +1,10 @@
+name: 'Run playbook on Ansible Tower'
+description: 'Github action that allows you to run a playbook on ansible tower'
+author: 'Victor Ortegon'
+inputs:
+  myInput:              # change this
+    description: 'input description here'
+    default: 'default value if applicable'
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
