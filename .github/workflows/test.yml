@@ -30,7 +30,7 @@ jobs:
               "var_owner": "martin.calderon@gds.ey.com",
               "var_deploymentId": "TCDTCX",
               "var_chargeCode": "32405098",
-              "var_location": "useast",
+              "var_location": "eastus",
               "var_productApp": "INT"
           }
 
