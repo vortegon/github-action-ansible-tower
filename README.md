@@ -3,7 +3,7 @@ Github action that allows you to run a playbook on ansible tower.
 
 ## Usage
 ```yaml
-uses: actions/github-action-ansible-tower@v1
+uses: vortegon/github-action-ansible-tower@v1
 with:
   ansible-tower-user: ${{ secrets.ansibleUser }}
   ansible-tower-pass: ${{ secrets.ansiblePass }}
