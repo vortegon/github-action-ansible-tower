@@ -28,7 +28,7 @@ jobs:
               "AZURE_RM_SECRET": "${{ secrets.azureClientSecret }}",
               "var_environment": "Development",
               "var_ctpService": "Co-Dev",
-              "var_owner": "martin.calderon@gds.ey.com",
+              "var_owner": "john.doe@test.com",
               "var_deploymentId": "TCDTCX",
               "var_chargeCode": "32405098",
               "var_location": "eastus",
