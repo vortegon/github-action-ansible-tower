@@ -1,6 +1,8 @@
 name: "Run playbook on Ansible Tower"
 description: "Github action that allows you to run a playbook on ansible tower"
 author: "Victor Ortegon"
+color: red
+icon: arrow-right-circle
 inputs:
   ansible-tower-user:
     description: "Ansible Tower User"
