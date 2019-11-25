@@ -25,7 +25,7 @@ jobs:
             {
               "var_azure_rm_subid": ${{ secrets.azureSubscription }},
               "AZURE_RM_CLIENTID": ${{ secrets.azureClientId }},
-              "AZURE_RM_SECRET": ${{ secrets.azureClientSecret }}
+              "AZURE_RM_SECRET": ${{ secrets.azureClientSecret }},
               "var_environment": "Development",
               "var_ctpService": "Co-Dev",
               "var_owner": "martin.calderon@gds.ey.com",
